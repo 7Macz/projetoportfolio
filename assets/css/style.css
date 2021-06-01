@@ -1,0 +1,195 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho =====================*/
+.bg-header-main {
+    height: 420px;
+    border-bottom: 4px solid #4b0082;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    
+    background-image: url("../image/teste2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.text-name {
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 900;
+}
+.text-name-sub{
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: normal;
+}
+hr {
+    margin-bottom: 3px;
+}
+.header-perfil {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 8px solid #4b0082;
+    display: flex;
+    position: absolute;
+    margin-top: 23rem;
+    background-image: url("../image/DJ_Marshmello_My_GIF.gif");
+    box-shadow: 0px 0px 10px 1px #1c1c1c;
+}
+.header-perfil-img {
+    position: relative;
+}
+
+/* Inf do Perfil */
+.container-inf {
+    height: 500px;
+    background-color: #F1F2ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container-inf-text-box {
+    width: 1000px;
+    margin-top: 20px;
+}
+.inf-text-welcome {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+.inf-text-sub {
+    font-size: 15px;
+    color: #4f4f4f;
+    margin-bottom: 35px;
+}
+.inf-text-resub {
+    color: #a9a9a9;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.signature {
+    color: #4f4f4f;
+    font-family: 'Meddon', cursive;
+}
+.container-inf-button {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #4b0082;
+    border-radius: 5px;
+    border: none;
+}
+button:focus {
+    outline-style: none;
+}
+
+/* Citações ================= */
+.container-quotes{
+    height: 300px;
+    background-image: url('../image/1508679.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.quotes-text{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-text input{
+    display: none;
+}
+.quote-text .quote {
+    overflow: hidden;
+}
+
+.quote {
+    width: 100%;
+    transition: 2s;
+    
+}
+
+.quote-formatation{
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.quote-autor{
+    color: #F1F2ED;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* Css com navegação manual */
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #4b0082;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #4b0082;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* Css para navegação automática */
+
+.navigation-auto {
+    position: absolute;
+}
